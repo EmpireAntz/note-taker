@@ -5,7 +5,7 @@ const path = require('path')
 //Initialize the express application
 const app = express()
 //Sets the port number
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 //Imports the API routes module
 const apiRoutes = require('./routes/apiRoutes')
 //Apply middleware to parse the body of incoming requests
